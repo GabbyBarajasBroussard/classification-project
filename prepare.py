@@ -111,3 +111,13 @@ def clean_telco(cached=True):
     telco= telco.drop(columns=["churn","paperless_billing","device_protection", "tech_support", "senior_citizen","phone_service", "streaming_tv", "streaming_movies", "partner","dependents","online_security", "online_backup","Unnamed: 0","customer_id","payment_type_id","tenure","contract_type_id", "internet_service_type_id"])
     return df
 
+# In[10]:
+#combining my split, train, test data and my clean data into one dataframe
+def prep_telco_data():
+    df = clean_telco()
+    train_validate, test = train_test_split(df, test_size=.2, random_state=123, stratify=df.is_churn)
+    train, validate = train_test_split(train_validate, 
+                                       test_size=.3, 
+                                       random_state=123, 
+                                       stratify=train_validate.is_churn)
+    return train, validate, test
