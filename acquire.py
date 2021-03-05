@@ -26,7 +26,7 @@ def get_telco_data():
         in the form of a CSV file. If you want to reproduce the results, you will need your own env.py file and database credentials.'''
     filename = "telco.csv"
     if os.path.isfile(filename):
-        return pd.read_csv(filename, index = False)
+        return pd.read_csv(filename)
     else:
         # read the SQL query into a dataframe
         df = pd.read_sql('''

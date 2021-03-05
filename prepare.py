@@ -86,12 +86,12 @@ telco.info()
 
 
 def clean_telco(cached=True):
-       '''This function acquires and prepares the telco data from a local csv, default. Passing cached=False acquires fresh data from sql and writes to csv. Returns the telco df with dummy variables encoding churn'''
+    '''This function acquires and prepares the telco data from a local csv, default. Passing cached=False acquires fresh data from sql and writes to csv. Returns the telco df with dummy variables encoding churn'''
     # use my aquire function to read data into a df from a csv file
     df = get_telco_data()
     # drop duplicates
     df.drop_duplicates(inplace=True)
-   #making single variable columns
+    #making single variable columns
     df['years_tenure'] = df.tenure / 12
     df['is_family']=df["partner" or "dependents"] == 'Yes'
     df['is_senior']=df["senior_citizen"]== "Yes"
@@ -108,7 +108,7 @@ def clean_telco(cached=True):
     # rename dummy columns
     df= df.rename(columns={'Yes': 'is_churn'})
     # removing id columns and string variable columns
-    telco= telco.drop(columns=["churn","paperless_billing","device_protection", "tech_support", "senior_citizen","phone_service", "streaming_tv", "streaming_movies", "partner","dependents","online_security", "online_backup","Unnamed: 0","customer_id","payment_type_id","tenure","contract_type_id", "internet_service_type_id"])
+    df= df.drop(columns=["churn","paperless_billing","device_protection", "tech_support", "senior_citizen","phone_service", "streaming_tv", "streaming_movies", "partner","dependents","online_security", "online_backup","Unnamed: 0","customer_id","payment_type_id","tenure","contract_type_id", "internet_service_type_id"])
     return df
 
 # In[10]:
