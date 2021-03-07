@@ -194,9 +194,9 @@ Remember you have a time limit of 5 minutes for your presentation. Make sure you
 
 
 # Predicting Churn at Telco
-  ## About the project
- ### Goals
- #### The goal for this project is to create a model predicting churn using the data obtained from the Telco databas by identifying what conditions and attributes are the largest drivers of churn. The deliverables from this project are acquire.py, prepare.py, telco.csv and final_presentation.ipynb. 
+## About the project
+### Goals
+#### The goal for this project is to create a model predicting churn using the data obtained from the Telco databas by identifying what conditions and attributes are the largest drivers of churn. The deliverables from this project are acquire.py, prepare.py, telco.csv and final_presentation.ipynb. 
 
 
 ## Data Dictionary
@@ -258,7 +258,7 @@ Remember you have a time limit of 5 minutes for your presentation. Make sure you
 <li> next steps </li>
 <li> how to run with new data. </li> 
 </ol><br><br>
-  ## Conclusion
+## Conclusion
 #### Customers without dependents, on month to month contracts and who have additional features are more likely to churn. Through analyzing the data, we have found that the customers who churn are paying more. This can be explained by the additional features that many customers have. Next steps would be to find out which specific features cost the most and cause the highest churn. My recommendation to retain customers would be to investigate offering bundle deals and having customers sign contracts to reduce the churn with the company.
 
   ## How to reproduce the results
