@@ -226,33 +226,32 @@ Remember you have a time limit of 5 minutes for your presentation. Make sure you
     𝐻𝑎 : 
     alpha ( 𝛼 ): 1 - confidence level (95% confidence level -> 𝛼=.05 )
 
-
-  ## Data Science Pipeline Used
-    ### acquire.py
+## Data Science Pipeline Used
+### acquire.py
     <ol>
       <li>acquire data from csv gathered from sql. </li>
      </ol>
-    ### prepare.py
+### prepare.py
     <ol>
       <li> address missing data </li>
       <li> address outliers </li>
       <li> split into train, validate, test</li>
       </ol>
-    ### explore
+### explore
     <ol>
       <li> plot correlation matrix of all variables </li>
       <li> test each hypothesis </li> 
       </ol>
-    ### model
-    <ol>
-        <li> try different algorithms: decision tree, logistic regression, random forest,knn</li> 
-        <li> which features are most influential? </li>
-        <li> evaluate on train </li>
-        <li> select top 3 +/- models to evaluate on validate </li>
-        <li> select top model </li>
-        <li> run model on test to verify. </li>
-        </ol>
-    ### conclusion
+### model
+<ol>
+<li> try different algorithms: decision tree, logistic regression, random forest,knn</li> 
+<li> which features are most influential? </li>
+<li> evaluate on train </li>
+<li> select top 3 +/- models to evaluate on validate </li>
+ <li> select top model </li>
+ <li> run model on test to verify. </li>
+ </ol>
+### conclusion
     <ol>
         <li> summarize findings </li>
         <li> make recommendations </li>
