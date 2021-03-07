@@ -195,8 +195,8 @@ Remember you have a time limit of 5 minutes for your presentation. Make sure you
 
 # Predicting Churn at Telco
   ## About the project
-    ### Goals
-      #### The goal for this project is to create a model predicting churn using the data obtained from the Telco databas by identifying what conditions and attributes are the largest drivers of churn. The deliverables from this project are acquire.py, prepare.py, telco.csv and final_presentation.ipynb. 
+ ### Goals
+ #### The goal for this project is to create a model predicting churn using the data obtained from the Telco databas by identifying what conditions and attributes are the largest drivers of churn. The deliverables from this project are acquire.py, prepare.py, telco.csv and final_presentation.ipynb. 
 
 
 ## Data Dictionary
@@ -228,38 +228,38 @@ Remember you have a time limit of 5 minutes for your presentation. Make sure you
 
 ## Data Science Pipeline Used
 ### acquire.py
-    <ol>
-      <li>acquire data from csv gathered from sql. </li>
-     </ol>
+<ol>
+<li>acquire data from csv gathered from sql. </li>
+</ol><br>
 ### prepare.py
-    <ol>
-      <li> address missing data </li>
-      <li> address outliers </li>
-      <li> split into train, validate, test</li>
-      </ol>
+<ol>
+<li> address missing data </li>
+<li> address outliers </li>
+<li> split into train, validate, test</li>
+</ol><br>
 ### explore
-    <ol>
-      <li> plot correlation matrix of all variables </li>
-      <li> test each hypothesis </li> 
-      </ol>
+<ol>
+<li> plot correlation matrix of all variables </li>
+<li> test each hypothesis </li> 
+</ol><br>
 ### model
 <ol>
 <li> try different algorithms: decision tree, logistic regression, random forest,knn</li> 
 <li> which features are most influential? </li>
 <li> evaluate on train </li>
 <li> select top 3 +/- models to evaluate on validate </li>
- <li> select top model </li>
- <li> run model on test to verify. </li>
- </ol>
+<li> select top model </li>
+<li> run model on test to verify. </li>
+ </ol><br>
 ### conclusion
-    <ol>
-        <li> summarize findings </li>
-        <li> make recommendations </li>
-        <li> next steps </li>
-        <li> how to run with new data. </li> 
-        </ol>
+<ol>
+<li> summarize findings </li>
+<li> make recommendations </li>
+<li> next steps </li>
+<li> how to run with new data. </li> 
+</ol><br><br>
   ## Conclusion
-        Customers without dependents, on month to month contracts and who have additional features are more likely to churn. Through analyzing the data, we have found that the customers who churn are paying more. This can be explained by the additional features that many customers have. Next steps would be to find out which specific features cost the most and cause the highest churn. My recommendation to retain customers would be to investigate offering bundle deals and having customers sign contracts to reduce the churn with the company.
+#### Customers without dependents, on month to month contracts and who have additional features are more likely to churn. Through analyzing the data, we have found that the customers who churn are paying more. This can be explained by the additional features that many customers have. Next steps would be to find out which specific features cost the most and cause the highest churn. My recommendation to retain customers would be to investigate offering bundle deals and having customers sign contracts to reduce the churn with the company.
 
   ## How to reproduce the results
-      You may download acquire.py and prepare.py. You will need your own env.py file with your SQL credentials in order to access the SQL server.
+#### You may download acquire.py and prepare.py. You will need your own env.py file with your SQL credentials in order to access the SQL server.
