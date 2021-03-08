@@ -92,8 +92,9 @@ def clean_telco(cached=True):
     # drop duplicates
     df.drop_duplicates(inplace=True)
     #making single variable columns
-    df['years_tenure'] = df.tenure / 12
-    df['is_family']=df["partner" or "dependents"] == 'Yes'
+    df['monthly_tenure'] = df.tenure / 12
+    df['is_family']=df["partner" and "dependents"] == 'Yes'
+    df['is_couple']=df["partner"]=="Yes"
     df['is_senior']=df["senior_citizen"]== "Yes"
     df['has_phones']= df['phone_service' or 'multiple_lines']== 'Yes'
     df['has_paperless_billing']= df['paperless_billing']=='Yes'
