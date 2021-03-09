@@ -26,7 +26,6 @@ from acquire import get_telco_data
 telco= pd.read_csv("telco.csv")
 telco.info()
 
-
 # In[3]:
 
 
