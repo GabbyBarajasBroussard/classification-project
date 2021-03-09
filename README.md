@@ -32,22 +32,22 @@
     alpha ( 𝛼 ): 1 - confidence level (95% confidence level -> 𝛼=.05 )
 
 ## Data Science Pipeline Used
-### acquire.py
+acquire.py
 <ol>
 <li>acquire data from csv gathered from sql. </li>
 </ol><br>
-### prepare.py
+prepare.py
 <ol>
 <li> address missing data </li>
 <li> address outliers </li>
 <li> split into train, validate, test</li>
 </ol><br>
-### explore
+explore
 <ol>
 <li> plot correlation matrix of all variables </li>
 <li> test each hypothesis </li> 
 </ol><br>
-### model
+model
 <ol>
 <li> try different algorithms: decision tree, logistic regression, random forest,knn</li> 
 <li> which features are most influential? </li>
@@ -56,7 +56,7 @@
 <li> select top model </li>
 <li> run model on test to verify. </li>
  </ol><br>
-### conclusion
+conclusion
 <ol>
 <li> summarize findings </li>
 <li> make recommendations </li>
